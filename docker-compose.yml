@@ -14,7 +14,7 @@ services:
       MYSQL_PASSWORD: wordpress_user_password
     volumes:
       - mysql_vol:/var/lib/mysql
-  #Wordpress { image is based on Apache}
+  #WordPress { image is based on Apache}
   wordpress:
       depends_on:
        - mysql_db
